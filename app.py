@@ -1,9 +1,13 @@
+import os
 import requests
 import pandas as pd
 import time
+from dotenv import load_dotenv
+
+load_dotenv()  # .env dosyasını yükle
 
 # 1. Google Cloud'dan aldığın API anahtarını buraya yapıştır
-API_KEY = "AIzaSyB7AuV_wecW7_Lc8vDFHfs4o-a2Gz8UTJU"
+API_KEY = os.getenv('API_KEY')  # .env dosyasından okunacak şekilde düzenlendi
 
 # Aramak istediğin tüm bölgeler
 bolgeler = [
