@@ -38,7 +38,6 @@ sektorler = [
 sonuclar = []
 url = "https://places.googleapis.com/v1/places:searchText"
 
-# HATA DÜZELTİLDİ: places.website -> places.websiteUri yapıldı
 headers = {
     "Content-Type": "application/json",
     "X-Goog-Api-Key": API_KEY,
